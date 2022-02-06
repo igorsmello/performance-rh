@@ -1,0 +1,7 @@
+Paleta de cores:
+- #4E4AD9 (Azul)
+- #F2E205 (Amarelo)		
+
+Fontes:
+- Montserrat
+

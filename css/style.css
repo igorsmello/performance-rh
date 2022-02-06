@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*********\
+\* Geral */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.btn {
+    display: inline-block;
+    padding: 13px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: #4E4AD9;
+    color: #fff;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #403bcc;
+    transition: all .2s ease;
+}
+#btn-login {
+    display: inline-block;
+    padding: 8px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: #fff;
+    color: #000;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.863);
+    transition: all .2s ease;
+    margin-right: -50px;
+}
+.btn:hover {
+    cursor: pointer;
+    background: #5d58df;
+    transform: scale(0.9);
+    transition: all 0.2s;
+}
+#btn-login:hover {
+    cursor: pointer;
+    background: #5d58df;
+    color: #fff;
+}
+.headline {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+/*******************\
+/* Navbar e Header */
+#btn-mobile {
+    display: none;
+}
+#logo {
+    display: none;
+}
+
+#navbar {
+    width: 100%;
+    background: #4E4AD9;
+    color: #fff;
+    height: 80px;
+    position: fixed;
+    font-weight: 700;
+}
+#navbar-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 2rem;
+}
+#navbar-items {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+#navbar-items li {
+    padding: 10px;
+}
+#navbar-items li:hover {
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+        transform: scale(1.07);
+}
+
+#go-to-login a {
+    color: inherit;
+}
+#go-to-login li {
+    list-style-type: none;
+}
+
+/*******************\
+/* Showcase do topo*/
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url(../img/performance-bg.png) no-repeat center center/cover;
+
+    /* Overlay */
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
+}
+
+#showcase-container {
+    text-align: center;
+}
+
+#showcase-container h2 {
+    font-size: 2.5rem;
+    margin-top: 300px;
+    padding: 20px 0;
+}
+#showcase-container h3 {
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+
+#showcase-container p {
+    font-size: 1.2rem;
+    padding: 20px 0;
+}
+
+/**********\
+/* Footer */
+#footer {
+    background: #222;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+
+/*****************\
+/* Media Queries 
+    LG e MD      */
+@media (min-width: 800px) and (max-width: 1230px) {
+
+    /* Nav */
+    .logo {
+        font-size: 1.5rem;
+        margin-left: -50px;
+    }
+    #navbar-items {
+        font-size: 15px;
+    }
+    #btn-login {
+        padding: 8px 20px;
+        margin-right: -40px;
+    }
+    #go-to-login a {
+        font-size: 16px;
+    }
+    
+}
+
+@media (min-width: 769px) and (max-width: 799px) {
+    .logo {
+        font-size: 1.5rem;
+        margin-left: -50px;
+    }
+    #navbar-items {
+        font-size: 15px;
+    }
+    #btn-login {
+        padding: 8px 19px;
+        margin-right: -30px;
+    }
+    #go-to-login a {
+        font-size: 16px;
+    }
+}

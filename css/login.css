@@ -1,5 +1,279 @@
 * {
+    border: none;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+.container {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(326deg, #6c69e5 18%, #6765d6 58%, #4e4ad9 99%);
+
+}
+
+.container-left {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: auto;
+    color: white;
+}
+
+.text-left {
+    position: relative;
+    top: 1rem;
+    width: 36.2vw;
+    height: auto;
+    text-align: center;
+}
+
+.text-left h1 {
+    font-family: 'Montserrat', Arial;
+    font-weight: 700;
+    font-size: 3vw;
+    color: var(--color-secondary);
+    text-align: left;
+}
+
+.text-left p {
+    position: relative;
+    top: 0.5rem;
+    text-align: left;
+    font-family: 'Poppins', Arial;
+    font-weight: 400;
+    font-size: 1.9vw;
+    box-sizing: border-box;
+}
+
+.container-left img {
+    position: relative;
+    top: 1rem;
+    width: 49vw;
+}
+
+.container-form {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: auto;
+    color: white;
+}
+
+.form-inputs {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32vw;
+    height: 73vh;
+    background-color: #fafaff0c;
+    border-radius: 0.9rem;
+    box-shadow: 0.1rem 0rem 1.2rem 0rem rgba(31, 24, 58, 0.212);
+}
+
+.text-rigtht {
+    position: relative;
+    bottom: 9vh;
+}
+
+.text-rigtht h2 {
+    font-family: 'Montserrat', Arial;
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.text-rigtht p {
+    margin-top: 0.6rem;
+    font-family: 'Poppins', Arial;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.input-email {
+    display:flex;
+    position: relative;
+    bottom: 1.4rem;
+    flex-direction: column;
+    width: 24vw;
+    line-height: 5vh;
+    font-family: 'Poppins', arial;
+}
+
+.msg-email {
+    position: relative;
+    height: 1.5rem;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0rem 0rem 1rem 0rem #4f4ad948;
+    background-color: #ffffff3a;
+    border-radius: 0.2rem;
+    transition: all 100ms ease; 
+}
+
+.msg-email:hover {
+    height: 1.8rem;
+    transition: all 90ms ease;
+}
+
+.msg-email::placeholder {
+    color: rgb(223, 2, 2);
+    font-size: 0.8rem;
+}
+
+.input-password {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 0.9rem;
+    width: 24vw;
+    line-height: 5vh;
+    font-family: 'Poppins', arial;
+}
+
+.msg-password {
+    height: 1.5rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: #ffffff3a;
+    border-radius: 0.2rem;
+    box-shadow: 0rem 0rem 1rem 0rem #4f4ad948;
+    transition: all 100ms ease;
+}
+
+.msg-password:hover {
+    height: 1.8rem;
+    transition: all 90ms ease;
+}
+
+.msg-password::placeholder {
+    font-size: 0.8rem;
+    color: rgb(223, 2, 2)
+}
+
+.button-submit {
+    position: relative;
+    top: 3.1rem;
+    width: 7rem;
+    height: 2.2rem;  
+    border-radius: 0.3rem;  
+    background-color: var(--color-primary);
+    box-shadow: 0rem 0rem 0.8rem 0rem rgba(17, 16, 73, 0.219);
+    color: white;
+    font-family: 'Poppins', Arial;
+    font-size: 1rem;
+    transition: all 100ms ease;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 601px) {
+
+    .container-left {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-inputs {
+        font-size: 3.2vw;
+        width: 90vw;
+    }
+
+    .text-rigtht h2 {
+        font-size: 5.3vw;
+    }
+
+    .text-rigtht p {
+        font-size: 3.2vw;
+    }
+
+    .input-email{
+        width: 75vw;
+    }
+
+    .msg-email {
+        font-size: 3vw;
+        height: 1.4rem;
+    }
+
+    .input-password {
+        width: 75vw;
+    }
+
+    .msg-password{
+        font-size: 3vw;
+        height: 1.4rem;
+    }
+
+    .button-submit{
+        width: 28vw;
+        height: 2rem;
+        font-size: 3.2vw;
+    }
+
+}
+
+
+@media only screen and (min-width: 602px) and (max-width: 1024px) {
+
+    .container-left {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-inputs {
+        font-size: 1.3rem;
+        width: 35rem;
+        height: 34rem;
+    }
+
+    .text-rigtht h2 {
+        font-size: 2rem;
+    }
+
+    .text-rigtht p {
+        font-size: 1.1rem;
+    }
+
+    .input-email{
+        width: 30rem;
+    }
+
+    .msg-email {
+        font-size: 1rem;
+        height: 1.9rem;
+    }
+
+    .input-password {
+        width: 30rem;
+    }
+
+    .msg-password{
+        font-size: 1rem;
+        height: 1.9rem;
+    }
+
+    .button-submit{
+        width: 9rem;
+        height: 2.6rem;
+        font-size: 1.2rem;
+    }
+
 }

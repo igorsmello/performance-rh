@@ -110,6 +110,9 @@
     cursor: pointer;
     gap: 0.5rem;
 }
+.login-mobile {
+    display: block
+}
 
 #hamburger {
     border-top: 2px solid;

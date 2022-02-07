@@ -110,6 +110,9 @@ a {
 #go-to-login li {
     list-style-type: none;
 }
+.login-mobile {
+    display:none
+}
 
 /*******************\
 /* Showcase do topo*/

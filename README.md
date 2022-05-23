@@ -1,5 +1,3 @@
-# README
-
 <h1 align="center">Performance RH</h1><br><br><br>
 
 
